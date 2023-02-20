@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Gestion des dossiers médicaux</title> 
+    <style>
+.table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+   max-width: 200%;
+   top: 200px;
+   color: black;
+   font-weight: bold;
+   font-size: 18px;
+   background-color: rgb(229, 232, 239);
+   margin-left: -170px;
+    }
+   td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 18px;
+    color: black;
+    width: 200px;
+    background:rgb(209, 203, 203);
+    }
+    .table th{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 18px;
+    color:black;
+    background-color:burlywood;
+    }
+    h1{background-color: azure;
+    height: 50px;
+    max-width: 200%;
+    }
+    tr{
+        height: 50px;
+    }
+
+    /* code css  du bouton de telechargement*/
+    .cssbuttons-io-button {
+ display: flex;
+ align-items: center;
+ font-family: inherit;
+ font-weight: 500;
+ font-size: 17px;
+ padding: 0.8em 1.5em 0.8em 1.2em;
+ color: white;
+ background: #ad5389;
+ background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%);
+ border: none;
+ box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+ letter-spacing: 0.05em;
+ border-radius: 20em;
+}
+
+.cssbuttons-io-button svg {
+ margin-right: 8px;
+}
+
+.cssbuttons-io-button:hover {
+ box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+}
+
+.cssbuttons-io-button:active {
+ box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-5">Gestion des dossiers médicaux</h1>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Numéro de dossier médical</th>
+            <th scope="col">civilite</th>
+            <th scope="col">Date de naissance</th>
+            <th scope="col">Médecin traitant</th>
+            <th scope="col">allergie</th>
+            <th scope="col">antecedent medical</th>
+            <th scope="col">Traitement en cours</th>
+            <th scope="col">resultat examen medicaux</th>
+            <th scope="col">note et observation du medecin</th>
+            <th scope="col">Rendez-vous precedent et  futur</th>
+            <th scope="col">note et observation du medecin</th>
+            <th scope="col">medicament prescrits</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>mifo</td>
+            <td>herman</td>
+            <td>123456</td>
+            <td>Homme</td>
+            <td>10/10/1990</td>
+            <td>Dr joel</td>
+            <td>null</td>
+            <td>null</td>
+            <td>carri dentaire</td>
+            <td>positif</td>
+            <td>etat avance</td>
+            <td>10/10/2023-11-03-2023</td>
+            <td>null</td>
+            <td>paracetamol</td>
+            <td>
+              <button class="btn btn-primary mr-2">Modifier</button>
+              <button class="btn btn-danger">Supprimer</button>
+              <!--Ajouter le bouton de telechargement-->
+              <button class="cssbuttons-io-button">
+                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z" fill="currentColor"></path></svg>
+                <span>Download</span>
+              </button>
+            </td>
+          </tr>
+          <!-- Ajouter ici les autres lignes -->
+        </tbody>
+      </table>
+      <button class="btn btn-success mt-3">Ajouter un nouveau dossier médical</button>
+    </div>
+  </body>
+</html>

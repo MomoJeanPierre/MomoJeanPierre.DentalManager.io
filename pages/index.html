@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Document</title>
+    <style>
+        td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 18px;
+    color: black;
+    background:rgb(209, 203, 203);
+    word-wrap: break-word;
+    overflow-x: auto;
+    }
+     th{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 18px;
+    color:black;
+    background-color:burlywood;
+    table-layout: fixed;
+    }
+    .button{
+        background-color: green;
+        width: 200px;
+        height: 50px;
+        margin-right: 0px;
+        border-radius: 40px;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        border-color: none;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <header> <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center my-5">GESTION DES PATIENTS</h1>
+          </div>
+          <button class="button">Ajouter</button>
+        </div>
+    </header>
+        <div class="row">
+          <div class="col-md-8">
+            </div>
+            <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nom et Prénom</th>
+                            <th>Date de naissance</th>
+                            <th>civilite</th>
+                            <th>Adresse</th>
+                            <th>Numéro de téléphone</th>
+                            <th>État de santé actuel</th>
+                            <th>Groupes sanguins</th>
+                            <th>Assurance maladie</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Dupont jean</td>
+                            <td>01/01/2000</td>
+                            <td>homme</td>
+                            <td>1 rue du test</td>
+                            <td>0123456789</td>
+                            <td>stable</td>
+                            <td>o+</td>
+                            <td>oui</td>
+                            <td>
+                                <button class="btn btn-primary">Modifier</button>
+                                <button class="btn btn-danger">Supprimer</button>
+                            </td>
+                        </tr>
+                        <!-- Ajoutez autant de lignes que nécessaire pour représenter vos patients -->
+                    </tbody>
+            </table>
+          </div>
+      </div>
+</body>
+</html>
+  

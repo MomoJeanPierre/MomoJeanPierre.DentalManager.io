@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Espace Personnel du Client</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+  .form-box {
+  max-width: 200px;
+  background: #2e3192;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+  margin: 500px;
+  margin-top: 100px;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  color: #03ff05;
+  background: #2e3192;
+  width: 200px;
+}
+
+/*Form text*/
+.title {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+/*Inputs box*/
+.form-container {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #2e3192;;
+  margin: 1rem 0 .5rem;
+}
+
+.input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 200px;
+  border-bottom: 1px solid #eee;
+  font-size: .9rem;
+  padding: 8px 15px;
+}
+
+.form-section {
+  padding: 16px;
+  font-size: .85rem;
+  background-color: #e0ecfb;
+  box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.form-section a {
+  font-weight: bold;
+  color: #0066ff;
+  transition: color .3s ease;
+}
+
+.form-section a:hover {
+  color: #005ce6;
+  text-decoration: underline;
+}
+
+/*Button*/
+.form button {
+  background-color: #0066ff;
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.form button:hover {
+  background-color: #005ce6;
+}
+body{
+      background-image: url(../images/background\ dental\ office.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;}
+
+    label{
+        color: #010101;
+        font-size: 20px;
+		float: left;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+h1 {
+    font-weight: bold;
+    color:white;
+    background-color: #2e3192;
+    font-size: 38px;
+    max-width: 200%;
+    text-align: center;
+  }
+  #navbarNav{
+	float: left;
+    color:  white;
+  }
+  .logo {
+    width: 80px;
+    height:  80px;
+}
+.card{
+	width: 600px;
+    margin-left: 300PX;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    float: center;
+    margin-top:  100px;
+	align-items: center;
+	
+}
+    </style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+	  <a class="navbar-brand" href="#"> <img class="logo" src="../images/logop.jpeg" alt="Logo"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Accueil</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Mon Profil</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Mes Consultations</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Demande de Consultation</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Déconnexion</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div class="card">
+	<div class="container mt-4">
+		<h1>Demande de Consultation Hospitalière</h1>
+		<form>
+			<div class="form-group">
+				<label for="nom_medecin">Date et Heure</label>
+				<input type="datetime-local" class="form-control" id="date_consultation" placeholder="Date et Heure">
+			</div>
+			<div class="form-group">
+				<label for="nom_medecin">Nom du Médecin souhaité</label>
+				<input type="text" class="form-control" id="nom_medecin">
+			</div>
+			<div class="form-group">
+				<label for="nom">Nom</label>
+				<input type="text" class="form-control" id="nom">
+			</div>
+			<div class="form-group">
+				<label for="prenom">Prénom</label>
+				<input type="text" class="form-control" id="prenom">
+			</div>
+			<div class="form-group">
+				<label for="adresse">Adresse</label>
+				<input type="text" class="form-control" id="adresse">
+			</div>
+            <div class="form-group">
+				<label for="ville">Ville</label>
+				<input type="text" class="form-control" id="ville">
+			</div>
+			<div class="form-group">
+				<label for="code_postal">Code Postal</label>
+				<input type="text" class="form-control" id="code_postal">
+			</div>
+			<div class="form-group">
+				<label for="telephone">Téléphone</label>
+				<input type="tel" class="form-control" id="telephone">
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email">
+			</div>
+			<div class="form-group">
+				<label for="commentaires">Commentaires</label>
+				<textarea class="form-control" id="commentaires" rows="3"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">Soumettre</button>
+		</form>
+	</div>
+</div>
+</body>
+</html>

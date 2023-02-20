@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register | Web Academy</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="pages/css/register style.css">
+    <link rel="stylesheet" href="pages/css/style1.css">
+    <style>
+    .logo {
+        width: 150px;
+        border-radius: 30px;
+        top: 10px;
+        position: relative;
+      }
+      p{
+    font-size: 22px;
+    font-family:  Arial;
+    font-weight: bold;
+      }
+      </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container  register-container">
+            <form>
+                <div class="header"> Page de connexion du personnel</div>
+                <div class="socials-wrapper">
+                    <ul>
+                        <li><a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="google"><i class="fab fa-google"></i></a></li>
+                      </ul>
+
+                      <header>
+                        <h2>se connecter avec @Email</h2>     
+                    </header>
+                </div>
+
+                <div class="button-input-group">
+                    <div class="group input-group">
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="group input-group">
+                        <input type="password" placeholder="Password" required pattern=".{8,}">
+                    </div>
+                    <div class="group button-group">
+                        <button class="signup-btn" onclick="window.location.href = 'pages/admind.html'">se connecter</button>
+                    </div>
+                    <div class="form-link forgot">
+                        <a href="#" class="login-link">mot de passe oublier?</a>
+                    </div>
+                    <a href="pages/inscription.html" class="login-link">vous n'avez pas de compte?</a>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="form-container  login-container">
+            <form>
+                <div class="header">se connecer</div>
+                <div class="socials-wrapper">
+                    <ul>
+                        <li><a href="#" class="facebook"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="google"><i class="fab fa-google"></i></a></li>
+                      </ul>
+
+                      <header>
+                        <h2>se connecter avec @mail</h2>     
+                    </header>
+                </div>
+
+                <div class="button-input-group">
+                    <div class="group input-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="group input-group">
+                        <input type="password" placeholder="Password" required pattern=".{8,}">
+                    </div>
+                    <div class="group button-group">
+                        <button class="signin-btn" onclick="window.location.href = 'pages/new.html'">se connecter</button>
+                    </div>
+                    <div class="form-link forgot">
+                        <a href="#" class="login-link">mot de passe oublier?</a>
+                    </div>
+                    <a href="pages/inscription.html" class="login-link">vous n'avez pas de compte?</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h2><img class="logo" src="images/logop.jpeg" alt="Logo"></h2>
+                    <h1>Bon retour!</h1>
+                    <div class="group button-group">
+                        <button class="trigger" id="login">patient</button>
+                    </div>
+                </div>
+
+                <div class="overlay-panel overlay-right">
+                    <h2><img class="logo" src="images/logop.jpeg" alt="Logo"></h2>
+                    <h1>Hello, les amis!</h1>
+                    <div class="group button-group">
+                        <button class="trigger" id="register">personnel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="pages/js/register script.js "></script>
+</body>
+</html>
